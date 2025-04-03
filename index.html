@@ -11,55 +11,13 @@
 <body>
     <div class="container">
         <h1>My Todo List</h1>
-        
-        <!-- Search and Filter Section -->
-        <div class="search-filter-section">
-            <select id="categoryFilter">
-                <option value="all">All Categories</option>
-                <option value="work">Work</option>
-                <option value="personal">Personal</option>
-                <option value="shopping">Shopping</option>
-                <option value="other">Other</option>
-            </select>
-            <select id="priorityFilter">
-                <option value="all">All Priorities</option>
-                <option value="high">High</option>
-                <option value="medium">Medium</option>
-                <option value="low">Low</option>
-            </select>
-            <select id="statusFilter">
-                <option value="all">All Status</option>
-                <option value="pending">Pending</option>
-                <option value="completed">Completed</option>
-            </select>
-        </div>
 
         <!-- Input Section -->
         <div class="input-section">
             <input type="text" id="todoInput" placeholder="Enter your task">
-            <select id="categoryInput">
-                <option value="work">Work</option>
-                <option value="personal">Personal</option>
-                <option value="shopping">Shopping</option>
-                <option value="other">Other</option>
-            </select>
-            <select id="priorityInput">
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-                <option value="low">Low</option>
-            </select>
-            <input type="date" id="dueDateInput">
             <input type="file" id="fileInput" style="display: none">
             <button id="addFileBtn" title="Add File"><i class="fas fa-paperclip"></i></button>
             <button id="addTodoBtn">Add Task</button>
-        </div>
-
-        <!-- Sort Section -->
-        <div class="sort-section">
-            <label>Sort by:</label>
-            <button id="sortByDate">Date <i class="fas fa-sort"></i></button>
-            <button id="sortByPriority">Priority <i class="fas fa-sort"></i></button>
-            <button id="sortByCategory">Category <i class="fas fa-sort"></i></button>
         </div>
 
         <!-- Todo List -->
@@ -70,13 +28,6 @@
                 <button class="edit-btn">Edit</button>
                 <button class="delete-btn">Delete</button>
             </div> -->
-        </div>
-
-        <!-- Statistics Section -->
-        <div class="statistics">
-            <div>Total Tasks: <span id="totalTasks">0</span></div>
-            <div>Completed: <span id="completedTasks">0</span></div>
-            <div>Pending: <span id="pendingTasks">0</span></div>
         </div>
     </div>
     <script src="script.js"></script>
